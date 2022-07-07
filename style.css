@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background: black;
+}
+
+.container {
+    padding: 4em;
+    padding-left: 3em;
+    margin-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    background-color: #000000;
+    border: 0.3em solid;
+    border-radius: 1em;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 50vh;
+    height: 50vh;
+    height: auto;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+#clock h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2.5px;
+}
+
+#clock #time {
+    display: flex;
+}
+
+#clock #time div {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, black);
+}
+
+#clock #time div span {
+    position: relative;
+    width: 100px;
+    height: 80px;
+    color: aqua;
+    background: transparent;
+    font-size: 3em;
+    padding: 10px;
+    text-shadow: 0 0 5px #00bfff,
+                 0 0 10px #00bfff;
+}
+
+#clock #time div:last-child span{
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 30px;
+    font-size: 1em;
+    background:  white;
+    color: black;
+    margin: 5px 10px;
+    text-shadow: none;
+    font-weight: 700;
+    text-align: center;
+    padding: 6px;
+    border-radius: 10px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, black);
+}
